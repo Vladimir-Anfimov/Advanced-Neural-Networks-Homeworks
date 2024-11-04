@@ -44,3 +44,5 @@ The training is efficient because I used the following techniques:
 - Data prefetching
 - Increased the number of workers
 - Non-blocking data loading
+
+I expect to get a total of 18 points for this homework.
