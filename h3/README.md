@@ -18,5 +18,89 @@ Wandb Dashboard: https://wandb.ai/vladimir-anfimov-alexandru-ioan-cuza/advanced-
         1.4.1. Cutout
         1.4.2. Mixup
 
+{
+  "model": {
+    "value": "PreActResNet-18"
+  },
+  "_wandb": {
+    "value": {
+      "m": [],
+      "t": {
+        "1": [
+          1,
+          41,
+          55,
+          105
+        ],
+        "2": [
+          1,
+          41,
+          55,
+          105
+        ],
+        "3": [
+          1,
+          2,
+          13,
+          16,
+          23,
+          55
+        ],
+        "4": "3.10.14",
+        "5": "0.18.3",
+        "8": [
+          1,
+          2,
+          5
+        ],
+        "12": "0.18.3",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.18.3",
+      "python_version": "3.10.14"
+    }
+  },
+  "epochs": {
+    "value": 100
+  },
+  "dataset": {
+    "value": "CIFAR-100"
+  },
+  "optimizer": {
+    "value": "SGD"
+  },
+  "scheduler": {
+    "value": "ReduceLROnPlateau"
+  },
+  "batch_size": {
+    "value": 64
+  },
+  "learning_rate": {
+    "value": 0.001
+  },
+  "early_stopping": {
+    "value": false
+  },
+  "test_batch_size": {
+    "value": 2000
+  },
+  "data_augmentations": {
+    "value": [
+      "RandomCrop",
+      "RandomHorizontalFlip",
+      "ColorJitter",
+      "RandomErasing"
+    ]
+  }
+}
 
 # Results
+| #  | Model           | Dataset    | Optimizer | Scheduler           | Epochs | Batch Size | Learning Rate | Early Stopping | Test Batch Size | Data Augmentations                                  | WandB CLI Version | Python Version |
+|----|----------------|------------|-----------|---------------------|--------|------------|---------------|----------------|----------------|-----------------------------------------------------|-------------------|----------------|
+| 1  | PreActResNet-18 | CIFAR-100  | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
+| 2  | PreActResNet-18 | CIFAR-100  | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
+| 3  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.5           | 3.10.12        |
+| 4  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
+| 5  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
+
+

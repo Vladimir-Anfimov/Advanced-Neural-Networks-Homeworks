@@ -84,6 +84,7 @@ train_loader = DataLoader(
     batch_size=config.options["batch_size"],
     shuffle=True, 
     pin_memory=pin_memory,
+    drop_last=True,
     num_workers=num_workers,
     prefetch_factor=prefetch_factor)
 
@@ -168,7 +169,7 @@ with tqdm(epochs) as tbar:
         val_acc = val()
             
         if scheduler:
-            scheduler.step(val_acc)
+            scheduler.step(train_acc)
 
         if val_acc > best:
             best = val_acc
