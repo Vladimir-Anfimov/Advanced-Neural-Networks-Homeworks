@@ -20,11 +20,18 @@ Wandb Dashboard: https://wandb.ai/vladimir-anfimov-alexandru-ioan-cuza/advanced-
 
 
 # Results
-| #  | Model           | Optimizer | Scheduler           | Epochs | Batch Size | Learning Rate | Data Augmentations                                  | Training Accuracy | Test Accuracy |
-|----|----------------|-----------|---------------------|--------|------------|---------------|-----------------------------------------------------| ----------------- | ------------- |
-| 1  | PreActResNet-18 | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing |  |  |
-| 3  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
-| 4  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | |  |
-| 5  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
+For all the models I have used the following hyperparameters:
+- Epochs: 100
+- Batch Size: 64
+- Learning Rate: 0.001
+- Scheduler: ReduceLROnPlateau
+
+
+| #  | Model           | Optimizer |  Data Augmentations                                  | Training Accuracy | Test Accuracy |
+|----|----------------|-----------|-----------------------------------------------------| ----------------- | ------------- |
+| 1  | PreActResNet-18 | SGD       |RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing |  |  |
+| 3  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
+| 4  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | |  |
+| 5  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
 
 
