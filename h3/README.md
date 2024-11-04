@@ -26,6 +26,7 @@ For all the models I have used the following hyperparameters:
 - Learning Rate: 0.001
 - Scheduler: ReduceLROnPlateau
 
+Some of the **important** results are:
 
 | #  | Model           | Optimizer |  Data Augmentations                                  | Training Accuracy | Test Accuracy |
 |----|----------------|-----------|-----------------------------------------------------| ----------------- | ------------- |
@@ -38,4 +39,8 @@ For all the models I have used the following hyperparameters:
 ![Train results](train.png)
 
 
-
+The training is efficient because I used the following techniques:
+- Pin memory
+- Data prefetching
+- Increased the number of workers
+- Non-blocking data loading
