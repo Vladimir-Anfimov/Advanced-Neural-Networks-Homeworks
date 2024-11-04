@@ -20,12 +20,11 @@ Wandb Dashboard: https://wandb.ai/vladimir-anfimov-alexandru-ioan-cuza/advanced-
 
 
 # Results
-| #  | Model           | Dataset    | Optimizer | Scheduler           | Epochs | Batch Size | Learning Rate | Early Stopping | Test Batch Size | Data Augmentations                                  | WandB CLI Version | Python Version |
-|----|----------------|------------|-----------|---------------------|--------|------------|---------------|----------------|----------------|-----------------------------------------------------|-------------------|----------------|
-| 1  | PreActResNet-18 | CIFAR-100  | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
-| 2  | PreActResNet-18 | CIFAR-100  | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
-| 3  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.5           | 3.10.12        |
-| 4  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
-| 5  | resnet18       | CIFAR-100  | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | false          | 2000           | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 0.18.3           | 3.10.14        |
+| #  | Model           | Optimizer | Scheduler           | Epochs | Batch Size | Learning Rate | Data Augmentations                                  | Training Accuracy | Test Accuracy |
+|----|----------------|-----------|---------------------|--------|------------|---------------|-----------------------------------------------------| ----------------- | ------------- |
+| 1  | PreActResNet-18 | SGD       | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing |  |  |
+| 3  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
+| 4  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | |  |
+| 5  | resnet18       | AdamW     | ReduceLROnPlateau   | 100    | 64         | 0.001         | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
 
 
