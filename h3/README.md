@@ -29,9 +29,9 @@ For all the models I have used the following hyperparameters:
 
 | #  | Model           | Optimizer |  Data Augmentations                                  | Training Accuracy | Test Accuracy |
 |----|----------------|-----------|-----------------------------------------------------| ----------------- | ------------- |
-| 1  | PreActResNet-18 | SGD       |RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing |  |  |
-| 3  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
-| 4  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | |  |
-| 5  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | |  |
+| 1  | PreActResNet-18 | SGD       | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing, CutMix, MixUp | 36.82%  | 50.33% |
+| 3  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing | 99.69%    | 72.40% |
+| 4  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | 69.80% | 72.82% |
+| 5  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing, CutMix, MixUp | 72.39% | 73.95% (best 75.02%) |
 
 
