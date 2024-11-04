@@ -34,4 +34,8 @@ For all the models I have used the following hyperparameters:
 | 4  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, RandomRotation, ColorJitter, RandomErasing | 69.80% | 72.82% |
 | 5  | resnet18       | AdamW     | RandomCrop, RandomHorizontalFlip, ColorJitter, RandomErasing, CutMix, MixUp | 72.39% | 73.95% (best 75.02%) |
 
+![Test results](test.png)
+![Train results](train.png)
+
+
 
