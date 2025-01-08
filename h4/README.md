@@ -1,3 +1,7 @@
+**Links**
+- **Wandb:** [Link](https://wandb.ai/vladimir-anfimov-alexandru-ioan-cuza/ann-project/workspace?nw=nwuservladimiranfimov)
+- **Kaggle Notebook with best results:** [Link](https://www.kaggle.com/code/vladimiranfimov/vladimir-noisy-cifar-100?scriptVersionId=216540663)
+
 **Research Report: Enhancing Classification on Noisy CIFAR-100 Dataset**
 
 **Author: Anfimov Vladimir**

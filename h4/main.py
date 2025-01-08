@@ -1,5 +1,5 @@
 # This code was used to train a Vision Transformer model on the CIFAR-100 dataset with noisy labels.
-# It must run in a Kaggle notebook with the following dataset: https://www.kaggle.com/competitions/fii-atnn-2024-project-noisy-cifar-100/overview
+# It must run in a Kaggle notebook, the competition can be found here: https://www.kaggle.com/competitions/fii-atnn-2024-project-noisy-cifar-100/overview
 
 import os
 import numpy as np
