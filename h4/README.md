@@ -1,5 +1,7 @@
 **Research Report: Enhancing Classification on Noisy CIFAR-100 Dataset**
 
+**Author: Anfimov Vladimir**
+
 ---
 
 **1. Introduction**
@@ -20,7 +22,7 @@ The final output is passed through a classification head. This classification he
 
 This structure ensures that the ViT effectively captures both local and global features of the image, making it robust for classification tasks, even in noisy label environments.
 
-![ViT Model Architecture](vit.png)
+![ViT Model Architecture](https://raw.githubusercontent.com/Vladimir-Anfimov/Advanced-Neural-Networks-Homeworks/refs/heads/main/h4/vit.png)
 
 
 **2. Baseline Implementation**
@@ -69,8 +71,8 @@ Additional experiments were conducted to explore the potential of other architec
 - **ViT\_Base\_Patch16\_224**: This model achieved a maximum validation accuracy of 75.4%, but training required 2 hours and 44 minutes, significantly increasing computational costs without  accuracy gains.
 - **EfficientNet\_B4**: This model achieved a maximum validation accuracy of 77.56%, slightly lower than the improved ViT model, indicating that while EfficientNet offers competitive accuracy.&#x20;
 
-![Training Loss and Accuracy](training.png)
-![Validation Accuracy](validation.png)
+![Training Loss and Accuracy](https://raw.githubusercontent.com/Vladimir-Anfimov/Advanced-Neural-Networks-Homeworks/refs/heads/main/h4/training.png)
+![Validation Accuracy](https://raw.githubusercontent.com/Vladimir-Anfimov/Advanced-Neural-Networks-Homeworks/refs/heads/main/h4/validation.png)
 
 
 ---
